@@ -8,7 +8,7 @@ so the system can run the optimum speed. [signal to define the speed].
  Clocking network provides the frequency inputs to the various devices within a system allowing them to 
 perform instendet functionality.
 
-Crystal == device of quartz + packageing arround it. passive circuit requires an oscilation circuit
+Crystal == device of quartz + packageing arround it. Passive circuit requires an oscilation circuit
 to produce useful signal. [passive circuit+oscil. circuit]
 
 Signal chain or signal - processing chain used in processing & mixed signal system design. 
@@ -18,7 +18,7 @@ an independent clock source.
 
  A clock receives or distributes a frequency or generates new to send as outputs to the devices using 
 phase locked loop [PLL] or non-PLL based circuitry.
- PLL when a system needs to minimize the propagation delay is able to do as a phase detector to keep
+ PLL-when a system needs to minimize the propagation delay is able to do as a phase detector to keep
 an input clock in a phase with an incoming freaquency through the use of a feedback loop.
  Non-PLL used when the time delay between source and output is not important to the system.
 
@@ -26,7 +26,7 @@ CLOCK FUNCTIONS
 
 Fan out buffers
 
-Distributes multiple outputs at the same frequency. Cpuld be PLL based & non-PLL
+Distributes multiple outputs at the same frequency. Could be PLL based & non-PLL.
  
 Multipliers/Dividers  
 
