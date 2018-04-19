@@ -1,0 +1,54 @@
+CLOCK
+
+ Clock provides pulse in the electronics. Clock signal regulates to flow of logic signals 
+so the system can run the optimum speed. [signal to define the speed]. 
+ Clock == a device which generates periodic signal for timing.
+ Any system requires a reference time for synchronization, command execution and data transfer.
+ Clocks connected to anything that processes a signal in the digital device.
+ Clocking network provides the frequency inputs to the various devices within a system allowing them to 
+perform instendet functionality.
+
+Crystal == device of quartz + packageing arround it. passive circuit requires an oscilation circuit
+to produce useful signal. [passive circuit+oscil. circuit]
+
+Signal chain or signal - processing chain used in processing & mixed signal system design. 
+
+Oscilator == crystal+oscilation circuit, which provides a signal with logic level output oscilator is 
+an independent clock source.
+
+ A clock receives or distributes a frequency or generates new to send as outputs to the devices using 
+phase locked loop [PLL] or non-PLL based circuitry.
+ PLL when a system needs to minimize the propagation delay is able to do as a phase detector to keep
+an input clock in a phase with an incoming freaquency through the use of a feedback loop.
+ Non-PLL used when the time delay between source and output is not important to the system.
+
+CLOCK FUNCTIONS
+
+Fan out buffers
+
+Distributes multiple outputs at the same frequency. Cpuld be PLL based & non-PLL
+ 
+Multipliers/Dividers  
+
+Clock which is able to transient input clock into an output clock with a higher [multiplier] or
+lower [divider] frequency which could be PLL or NON-PLL
+
+Sybthesizers
+
+Contains one or more PLLs it receives a stimulus usually a low frequency signal from a crystal & 
+generates multiple outputs with different [int. or fractional] frequencies.
+
+Jitter
+
+Cleanes any PLL based clock which cleans the noise from reference check & provides clean and sync. 
+Clock from the receivers VCO or internal VCO.
+
+Output Skew
+
+Difference between 2 propagating delay times when input switching causes multiple out switching.
+
+Propagation delay tpd.
+
+Between the specified reference points on the input and output voltage move wave forms one output
+changing from one difference level to another [from high to low or au conrai].
+
