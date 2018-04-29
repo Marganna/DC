@@ -1,0 +1,22 @@
+Bistable multivibrator has 2 stable states [bi], set - S & reset - R => set-reset
+or S-R latch. Wire 2 NOR gates so that the out of one of them feeds back to the 
+input of another and the same does the other latch. => Outputs are in opposite states. 
+If S and R has the same value and it =1 => result in Q & !Q  = 0. It is also known as 
+invalid or illegal state for the S-R multivibrator. S=1 R=0 => set the multivibrator =>
+Q=1 !Q=0. R=1 S=0 => reset the multivibrator.Q&!Q in the same state => invalid condition,
+unstable with S&R inputs inactive, circuit stabilize <=> S or R condition as one 
+gate [relay,coil] is bound to react with a different speed than other. Both identical =>
+oscilate between high and low as a astble multivibrator non reaching of a stability.
+Not stable [continually oscillating] condition is rare. The state of circuit is 
+unpredictable after power-up if there is a cycle or 2 of the oscillation. The basic 
+problem is race condition [occurs if 2 mutually-exclusive events are initiated at the same
+time through different circuit elements by a single cause]  between 2 relays. Here
+multy-exclusive event is the de-energized state of relays. If one relay is de-energized,
+interlocking happens in order not to latch both relays, and if both relays de-energize, 
+both relays race to latched as recive power but  through the closed contact will ceep the other 
+relay switched on [ energized] => maintaining the circuit in one of the states.The winer is
+defined by the physical characteristics of the relays and not the circuit design.It is 
+possible to avoid the unpredictable condition using time-delay relay to disable one of the competing 
+relays for a short time, so as the circuit powers up, the time-delay relay contact and delays
+closing for  second and the same au conrai. In any sequential system it's a problem for detecting and 
+eliminating. These latches are wide used in motors!
